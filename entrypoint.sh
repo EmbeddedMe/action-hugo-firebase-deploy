@@ -13,7 +13,7 @@ hugo $HUGO_PARAMS
 
 # Publish to Google Firebase.
 firebase use --token $FIREBASE_DEPLOY_TOKEN $ALIAS
-firebase deploy -m "
+firebase deploy -p "./public" -m "
   Successful Deployment: 
   Event: $GITHUB_EVENT_NAME,
   Commit SHA: $GITHUB_SHA,
