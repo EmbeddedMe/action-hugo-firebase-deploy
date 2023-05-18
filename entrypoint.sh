@@ -16,7 +16,7 @@ ls
 
 # Publish to Google Firebase.
 firebase use --token $FIREBASE_DEPLOY_TOKEN $ALIAS
-firebase deploy -p "./public" -m "
+firebase deploy -p "/home/runner/work/mrsnightmare-website/mrsnightmare-website/public" -m "
   Successful Deployment: 
   Event: $GITHUB_EVENT_NAME,
   Commit SHA: $GITHUB_SHA,
