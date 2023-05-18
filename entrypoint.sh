@@ -11,6 +11,9 @@ HUGO_PARAMS=${3:-hugo-params}
 # Build the Hugo site.
 hugo $HUGO_PARAMS
 
+echo $(pwd)
+ls
+
 # Publish to Google Firebase.
 firebase use --token $FIREBASE_DEPLOY_TOKEN $ALIAS
 firebase deploy -p "./public" -m "
